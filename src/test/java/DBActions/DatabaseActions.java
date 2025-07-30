@@ -19,7 +19,9 @@ public class DatabaseActions {
 	public static void connectToDatabase(String db_url, String user, String password)
 			throws SQLException, ClassNotFoundException {
 
+
 		try {
+
 			conn = DriverManager.getConnection(db_url, user, password);
 			if (conn != null) {
 				System.out.println("Connected to the database");
